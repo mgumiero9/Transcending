@@ -10,9 +10,12 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".EntranceScreen">
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@drawable/top_screen"
-        android:contentDescription="@string/EntranceScreen" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/top_screen2"
+        android:contentDescription="@string/EntranceScreen"
+        android:layout_alignParentEnd="false"
+        style="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
 
 </RelativeLayout>
