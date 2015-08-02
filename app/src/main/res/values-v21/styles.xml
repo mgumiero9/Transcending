@@ -1,7 +1,8 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Base application theme. v21-->
     <style name="AppTheme" parent="AppTheme.Base" >
+<!--
 
         <item name="primary">#FF5722</item>
         <item name="primary_dark">#E64A19</item>
@@ -12,6 +13,7 @@
         <item name="icons">#FFFFFF</item>
         <item name="divider">#B6B6B6</item>
 
+-->
     </style>
 
 </resources>
