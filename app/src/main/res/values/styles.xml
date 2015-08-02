@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme.Base" parent="Theme.AppCompat">
+    <style name="AppTheme.Base" parent="Base.ThemeOverlay.AppCompat.Dark">
 <!--
         <item name="primary">#FF5722</item>
         <item name="primary_dark">#E64A19</item>
