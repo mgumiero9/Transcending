@@ -8,34 +8,80 @@
     tools:context=".EntranceScreen">
 
     <ImageView
+        style="@android:style/Theme.Material.NoActionBar.Fullscreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/universe"
-        android:contentDescription="@string/EntranceScreen"
         android:layout_alignParentEnd="false"
-        style="@android:style/Theme.Material.NoActionBar.Fullscreen"
-        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:layout_gravity="center"
+        android:contentDescription="@string/EntranceScreen"
         android:scaleType="fitXY"
-        android:layout_gravity="center" />
+        android:src="@drawable/universe"
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/earth"
-        android:contentDescription="@string/Earth"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp" />
+        android:contentDescription="@string/Earth"
+        android:src="@drawable/earth"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/transcending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/transcending"  />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/cartas_de_cristo"
+        android:layout_below="@+id/transcending"
+        android:layout_marginStart="16dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:layout_marginRight="8dp"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:textColor="@color/primary_light"
+        android:background="@color/primary"
+        android:elevation="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook_login"
+        android:id="@+id/facebook_login"
+        android:layout_marginLeft="8dp"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/primary_light"
+        android:background="@color/accent"
+        android:elevation="16dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="40sp"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp" />
+        android:layout_marginBottom="32dp"
+        android:text="."
+        android:textColor="@color/primary_text"/>
+
 
 </RelativeLayout>

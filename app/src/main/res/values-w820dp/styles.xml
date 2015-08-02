@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. v21-->
+    <style name="AppTheme" parent="AppTheme.Base" >
+<!--
+
+        <item name="primary">#FF5722</item>
+        <item name="primary_dark">#E64A19</item>
+        <item name="primary_light">#FFCCBC</item>
+        <item name="accent">#448AFF</item>
+        <item name="primary_text">#212121</item>
+        <item name="secondary_text">#727272</item>
+        <item name="icons">#FFFFFF</item>
+        <item name="divider">#B6B6B6</item>
+
+-->
+    </style>
+
+</resources>
