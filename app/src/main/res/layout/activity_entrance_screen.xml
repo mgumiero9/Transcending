@@ -46,6 +46,7 @@
 
     <Button
         android:id="@+id/login"
+        android:onClick="loginApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cartas_de_cristo"
