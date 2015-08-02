@@ -10,10 +10,22 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/top_screen2"
+        android:src="@drawable/universe"
         android:contentDescription="@string/EntranceScreen"
         android:layout_alignParentEnd="false"
         style="@android:style/Theme.Material.NoActionBar.Fullscreen"
-        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:scaleType="fitXY"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/earth"
+        android:contentDescription="@string/Earth"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
 </RelativeLayout>
