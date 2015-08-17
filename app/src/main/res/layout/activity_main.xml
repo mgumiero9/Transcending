@@ -10,22 +10,20 @@
     <TextView android:text="@string/hello_world"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/app_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView android:text="@string/test_paragraph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"      />
-    <TextView
-        android:id="@+id/app_directory"
-        android:layout_marginTop="32dp"
+    <ListView android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_gravity="right" />
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"/>
 
 </LinearLayout>
