@@ -25,6 +25,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/divider"
         android:layout_weight="1"
-        android:drawSelectorOnTop="false"/>
+        android:drawSelectorOnTop="false"
+        android:layout_marginBottom="32dp"/>
 
 </LinearLayout>
