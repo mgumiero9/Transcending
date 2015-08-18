@@ -13,10 +13,9 @@ public final class FeedReaderContract {
 
     /* Inner class that defines the table contents */
     public static abstract class FeedEntry implements BaseColumns {
-        public static final String TABLE_NAME = "document";
-        public static final String COLUMN_NAME_DOCUMENT_ID = "documentid";
-        public static final String COLUMN_NAME_TITLE = "title";
-        public static final String COLUMN_NAME_PARAGRAPH_NUMBER = "paragraphnumber";
-        public static final String COLUMN_NAME_PARAGRAPH_CONTENT = "paragraphcontent";
+        public static final String DOCUMENT_NAME = "document_name";
+        public static final String PARAGRAPH_NUMBER = "paragraph_number";
+        public static final String PARAGRAPH_CONTENT = "paragraph_content";
+        public static final String PARAGRAPH_TYPE = "paragraph_type";
     }
 }
