@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.SimpleCursorAdapter;
 
 public class ListViewLoader extends ListActivity
@@ -40,7 +41,7 @@ public class ListViewLoader extends ListActivity
 
         // Create a progress bar to display while the list loads
         ProgressBar progressBar = new ProgressBar(this);
-//        progressBar.setLayoutParams(new LayoutParams(R.id.list.WRAP_CONTENT, R.id.list.WRAP_CONTENT, Gravity.CENTER));
+        progressBar.setLayoutParams(new LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
         progressBar.setIndeterminate(true);
         getListView().setEmptyView(progressBar);
 
