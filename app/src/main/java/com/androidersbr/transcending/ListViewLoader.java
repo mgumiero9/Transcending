@@ -40,7 +40,7 @@ public class ListViewLoader extends ListActivity
 
         // Create a progress bar to display while the list loads
         ProgressBar progressBar = new ProgressBar(this);
-        progressBar.setLayoutParams(new LayoutParams(R.id.list.WRAP_CONTENT, R.id.list.WRAP_CONTENT, Gravity.CENTER));
+//        progressBar.setLayoutParams(new LayoutParams(R.id.list.WRAP_CONTENT, R.id.list.WRAP_CONTENT, Gravity.CENTER));
         progressBar.setIndeterminate(true);
         getListView().setEmptyView(progressBar);
 

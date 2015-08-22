@@ -49,4 +49,9 @@ public class EntranceScreen extends Activity {
         Intent newIntent = new Intent(this, MainActivity.class);
         startActivity(newIntent);
     }
+
+    public void facebookLoginApp(View view) {
+        Intent newIntent = new Intent(this, ListViewLoader.class);
+        startActivity(newIntent);
+    }
 }
