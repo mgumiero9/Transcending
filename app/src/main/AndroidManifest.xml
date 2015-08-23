@@ -27,7 +27,7 @@
             android:theme="@style/AppTheme.Base">
         </activity>
         <activity
-            android:name=".ListViewLoader"
+            android:name=".ToAnalyzeThenDelete.ListViewLoader"
             android:label="@string/facebook_login"
             android:theme="@style/AppTheme.Base">
         </activity>

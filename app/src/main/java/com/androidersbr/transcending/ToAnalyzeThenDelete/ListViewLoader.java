@@ -1,4 +1,4 @@
-package com.androidersbr.transcending;
+package com.androidersbr.transcending.ToAnalyzeThenDelete;
 
 import android.app.ListActivity;
 import android.app.LoaderManager;
@@ -7,11 +7,6 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-//import android.support.v4.app.LoaderManager;
-//import android.support.v4.content.CursorLoader;
-//import android.support.v4.content.Loader;
-//import android.support.v4.widget.SimpleCursorAdapter;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -19,6 +14,11 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.SimpleCursorAdapter;
+
+//import android.support.v4.app.LoaderManager;
+//import android.support.v4.content.CursorLoader;
+//import android.support.v4.content.Loader;
+//import android.support.v4.widget.SimpleCursorAdapter;
 
 public class ListViewLoader extends ListActivity
         implements LoaderManager.LoaderCallbacks<Cursor> {

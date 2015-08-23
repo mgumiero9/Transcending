@@ -27,6 +27,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.androidersbr.transcending.ToAnalyzeThenDelete.Shakespeare;
+
 /**
  * Demonstration of using ListFragment to show a list of items
  * from a canned array.
