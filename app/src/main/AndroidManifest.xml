@@ -31,6 +31,11 @@
             android:label="@string/facebook_login"
             android:theme="@style/AppTheme.Base">
         </activity>
+        <activity
+            android:name=".FragmentListArray"
+            android:label="@string/fragment_list_array"
+            android:theme="@style/AppTheme.Base">
+        </activity>
     </application>
 
 </manifest>

@@ -2,7 +2,6 @@ package com.androidersbr.transcending;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -46,7 +45,7 @@ public class EntranceScreen extends Activity {
     }
 
     public void loginApp(View view) {
-        Intent newIntent = new Intent(this, MainActivity.class);
+        Intent newIntent = new Intent(this, FragmentListArray.class);
         startActivity(newIntent);
     }
 
