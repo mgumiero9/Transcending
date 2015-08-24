@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.androidersbr.transcending.ToAnalyzeThenDelete.ListViewLoader;
-
 public class EntranceScreen extends Activity {
 
     @Override
@@ -52,7 +50,7 @@ public class EntranceScreen extends Activity {
     }
 
     public void facebookLoginApp(View view) {
-        Intent newIntent = new Intent(this, ListViewLoader.class);
+        Intent newIntent = new Intent(this, MainActivity.class);
         startActivity(newIntent);
     }
 }

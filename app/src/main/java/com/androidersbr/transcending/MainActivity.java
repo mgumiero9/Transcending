@@ -1,23 +1,41 @@
 package com.androidersbr.transcending;
 
-import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    FeedReaderDbHelper dbhelper;
+    ListView mylist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbhelper = new FeedReaderDbHelper(this);
+        loadMyList();
+
+        // this is just a test to show app directory... I can erase anytime
         String myAppDirectory = Environment.getDataDirectory().toString();
         TextView myTextView = (TextView) findViewById(R.id.app_directory);
         myTextView.setText(myAppDirectory);
-        
+    }
+
+    private void loadMyList() {
+        List<String> list = dbhelper.getData();
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, list);
+        mylist = (ListView) findViewById(R.id.list);
+        mylist.setAdapter(adapter);
     }
 
     @Override
