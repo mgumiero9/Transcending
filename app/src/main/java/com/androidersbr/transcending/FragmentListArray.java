@@ -24,7 +24,9 @@ import android.app.ListFragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.androidersbr.transcending.ToAnalyzeThenDelete.Shakespeare;
@@ -47,8 +49,11 @@ public class FragmentListArray extends Activity {
         @Override
         public void onActivityCreated(Bundle savedInstanceState) {
             super.onActivityCreated(savedInstanceState);
-            setListAdapter(new ArrayAdapter<String>(getActivity(),
-                    android.R.layout.simple_list_item_1, Shakespeare.TITLES));
+
+            Adapter myAdapter = new ArrayAdapter<String>(getActivity(),
+                    android.R.layout.simple_list_item_1, Shakespeare.TITLES);
+
+            setListAdapter((ListAdapter) myAdapter);
         }
         @Override
         public void onListItemClick(ListView l, View v, int position, long id) {
