@@ -36,6 +36,11 @@
             android:label="@string/fragment_list_array"
             android:theme="@style/AppTheme.Base">
         </activity>
+        <activity
+            android:name=".ExternalDBActivity"
+            android:label="@string/ExternalDBActivity"
+            android:theme="@style/AppTheme.Base">
+        </activity>
     </application>
 
 </manifest>

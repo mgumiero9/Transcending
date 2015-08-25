@@ -5,15 +5,12 @@ import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
-    FeedReaderDbHelper dbhelper;
+    DBHelper dbhelper;
     ListView mylist;
 
     @Override
@@ -21,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dbhelper = new FeedReaderDbHelper(this);
-        loadMyList();
+        dbhelper = new DBHelper(this);
+        //loadMyList();
 
         // this is just a test to show app directory... I can erase anytime
         String myAppDirectory = Environment.getDataDirectory().toString();
@@ -30,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
         myTextView.setText(myAppDirectory);
     }
 
-    private void loadMyList() {
+    /*private void loadMyList() {
         List<String> list = dbhelper.getData();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, list);
         mylist = (ListView) findViewById(R.id.list);
         mylist.setAdapter(adapter);
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -50,7 +50,7 @@ public class EntranceScreen extends Activity {
     }
 
     public void facebookLoginApp(View view) {
-        Intent newIntent = new Intent(this, MainActivity.class);
+        Intent newIntent = new Intent(this, ExternalDBActivity.class);
         startActivity(newIntent);
     }
 }

@@ -1,4 +1,4 @@
-package com.androidersbr.transcending;
+package com.androidersbr.transcending.ToAnalyzeThenDelete;
 
 import android.provider.BaseColumns;
 

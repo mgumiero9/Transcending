@@ -1,17 +1,10 @@
-package com.androidersbr.transcending;
-
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.androidersbr.transcending.ToAnalyzeThenDelete;
 
 /**
  * Created by Gumiero on 09/08/2015 at 22:45 for Transcending.
  * This is a database helper class
  */
+/*
 public class FeedReaderDbHelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
     private static final String TEXT_TYPE = " TEXT";
@@ -62,3 +55,4 @@ public class FeedReaderDbHelper extends SQLiteOpenHelper {
         onUpgrade(db, oldVersion, newVersion);
     }
 }
+*/

@@ -10,4 +10,5 @@
     <string name="test_paragraph">Eu, o <b>CRISTO</b>, aproveito esta oportunidade para falar
 diretamente com VOCÊ.</string>
     <string name="fragment_list_array">FragmentListArray</string>
+    <string name="ExternalDBActivity">ExternalDBActivity</string>
 </resources>
