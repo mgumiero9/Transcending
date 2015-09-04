@@ -7,6 +7,7 @@ package com.androidersbr.transcending;
 import android.app.Activity;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -19,10 +20,10 @@ public class ExternalDBActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
 
-        String[] from = new String[] { "_id", "columnName1", "columnName2" };
-        int[] to = new int[] { R.id.TextView1, R.id.TextView2, R.id.TextView3 };
+        String[] from = new String[] { "_id", "document_name", "paragraph_number", "paragraph_content", "paragraph_type" };
+        int[] to = new int[] { R.id.TextView1, R.id.TextView2, R.id.TextView3, R.id.TextView4, R.id.TextView5 };
 
         dbhelper = new DBHelper(this);
 
@@ -36,7 +37,7 @@ public class ExternalDBActivity extends Activity {
         Cursor c = dbhelper.getData();
 
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(
-                getApplicationContext(), R.layout.list, c, from, to);
+                getApplicationContext(), R.layout.list, c, from, to, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
         ListView list = (ListView) findViewById(R.id.ListView1);
 
