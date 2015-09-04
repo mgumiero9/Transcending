@@ -3,6 +3,7 @@ package com.androidersbr.transcending;
 /**
  * Created by Gumiero on 25/08/2015 at 00:46 for Transcending.
  */
+
 import android.app.Activity;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class ExternalDBActivity extends Activity {
         int[] to = new int[] { R.id.TextView1, R.id.TextView2, R.id.TextView3 };
 
         dbhelper = new DBHelper(this);
+
         try {
             dbhelper.createDataBase();
         } catch (IOException e) {

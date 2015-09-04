@@ -3,10 +3,12 @@ package com.androidersbr.transcending;
 /**
  * Created by Gumiero on 24/08/2015 at 22:12 for Transcending.
  */
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -16,7 +18,7 @@ import java.io.OutputStream;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static String DB_NAME = "Transcending10";
+    private static String DB_NAME = "Transcending10.db3";
     private SQLiteDatabase db;
     private final Context context;
     private String DB_PATH;
@@ -50,6 +52,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private void copyDataBase() throws IOException {
 
         InputStream myInput = context.getAssets().open(DB_NAME);
+        Log.i("MGUMIERO9 ","myInput: " + myInput.toString());
         String outFileName = DB_PATH + DB_NAME;
         OutputStream myOutput = new FileOutputStream(outFileName);
         byte[] buffer = new byte[1024];
@@ -57,6 +60,7 @@ public class DBHelper extends SQLiteOpenHelper {
         while ((length = myInput.read(buffer)) > 0) {
             myOutput.write(buffer, 0, length);
         }
+        Log.i("MGUMIERO9","copyDatabase DONE");
 
         // Close the streams
         myOutput.flush();
@@ -69,7 +73,7 @@ public class DBHelper extends SQLiteOpenHelper {
         String myPath = DB_PATH + DB_NAME;
         db = SQLiteDatabase.openDatabase(myPath, null,
                 SQLiteDatabase.OPEN_READONLY);
-        Cursor c = db.rawQuery("SELECT * FROM table1", null);
+        Cursor c = db.rawQuery("SELECT * FROM documents3", null);
         // Note: Master is the one table in External db. Here we trying to access the records of table from external db.
         return c;
     }
