@@ -22,8 +22,8 @@ public class ExternalDBActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        String[] from = new String[] { "_id", "document_name", "paragraph_number", "paragraph_content", "paragraph_type" };
-        int[] to = new int[] { R.id.TextView1, R.id.TextView2, R.id.TextView3, R.id.TextView4, R.id.TextView5 };
+        String[] from = new String[] { "_id", "paragraph_content" };
+        int[] to = new int[] { R.id.TextView1, R.id.TextView2 };
 
         dbhelper = new DBHelper(this);
 

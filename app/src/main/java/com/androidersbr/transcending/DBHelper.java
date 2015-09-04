@@ -73,7 +73,7 @@ public class DBHelper extends SQLiteOpenHelper {
         String myPath = DB_PATH + DB_NAME;
         db = SQLiteDatabase.openDatabase(myPath, null,
                 SQLiteDatabase.OPEN_READONLY);
-        Cursor c = db.rawQuery("SELECT * FROM documents3", null);
+        Cursor c = db.rawQuery("SELECT _id, paragraph_content FROM documents3", null);
         // Note: Master is the one table in External db. Here we trying to access the records of table from external db.
         return c;
     }
